@@ -1,0 +1,105 @@
+.hero {
+    padding: 6rem 1.5rem;
+    text-align: center;
+    background: white;
+    /* Add a subtle gradient background if needed to match the soft look */
+    background: radial-gradient(circle at center, #fff 0%, #f8fcfc 100%);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconWrapper {
+    width: 64px;
+    height: 64px;
+    background-color: var(--color-primary-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 155, 138, 0.2);
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+}
+
+.textGray {
+    color: #4A5568;
+}
+
+.textOrange {
+    color: var(--color-primary-orange);
+}
+
+.textGreen {
+    color: var(--color-primary-green);
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #718096;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    /* Pill shape */
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btnGreen {
+    background: linear-gradient(135deg, var(--color-primary-green) 0%, var(--color-primary-green-dark) 100%);
+}
+
+.btnOrange {
+    background: linear-gradient(135deg, var(--color-primary-orange) 0%, var(--color-primary-orange-dark) 100%);
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .buttonGroup {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
